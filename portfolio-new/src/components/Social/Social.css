@@ -1,0 +1,19 @@
+.icon-container{
+    position: fixed;
+    top: 50%;
+    height:auto;
+    z-index: 4;
+}
+
+.icon-bar{
+    display:flex;
+    flex-direction: column;
+    
+}
+
+@media screen and (max-width: 760px){
+    .icon-container{
+        
+    }
+}
+

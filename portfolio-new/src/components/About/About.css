@@ -1,0 +1,60 @@
+.Left-column{
+    margin-left: 1em;
+
+}
+.EmptySpace{
+    height: 40px;
+    width: auto;
+}
+
+.Skills{
+    opacity: 0;
+}
+
+.typewriter .Skills {
+  opacity: 1;
+  overflow: hidden;
+  max-width: 13em;
+  text-align: start;
+  border-right: 0.15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 ; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.1em; /* Adjust as needed */
+  animation: typing 1.5s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 13em;
+    }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: black;
+    }
+  }
+  
+  .Skill-Words{
+    max-width:400px;
+    
+}
+
+@media screen and (max-width: 500px){
+    .Skills{
+        font-size: 3vh;
+    }
+    .Skill-Words{
+        max-width: 200px;
+        font-size: 2vh;
+    }
+}

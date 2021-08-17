@@ -1,0 +1,55 @@
+.container{
+    max-height: 800px;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+.container-inner{
+    padding-top:200px;
+    display: flex;
+    flex-direction: row;
+}
+.empty-row{
+    width: 10%;
+    display: absolute;
+    
+}
+
+.line{
+    height:150%;
+    border-right: 5px solid #082154;
+}
+
+
+.content-row{
+    height:700px;
+    width:75%;
+    display: flex;
+}
+
+.Intro-profile{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 300px; /* or any custom size */
+    height: 400px; 
+    object-fit: cover;
+    margin-top: 30px;
+
+}
+.Introduction-p{
+    padding-top: 100px;
+    vertical-align: middle;
+    text-align: start;
+    margin-left: 1em;
+}
+
+.Intro-profile{
+    margin-left: 1em;
+}
+@media screen and (max-width: 760px){
+    .content-row{
+        display: grid;
+        }
+        .Intro-profile{
+            display: none;
+        }
+}

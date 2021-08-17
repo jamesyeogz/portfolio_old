@@ -1,0 +1,128 @@
+.Card-Wrapper {
+  width: 100%;
+  perspective: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card-Container {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  box-shadow: 0 2px 7px 1px rgba(31, 31, 31, 0.2);
+  color: black;
+  position: relative;
+  cursor: grab;
+  background: linear-gradient(#f3efef, #c7c7c9);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.Card-Content-Front {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+}
+
+.h3-Card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.Card-Back{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+.button1 {
+  position: relative;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid black;
+  border-radius: 25px;
+  box-sizing: border-box;
+  font-family: monospace;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  transition: all 0.2s;
+  margin-top: 10px;
+}
+.button1:hover {
+  color: white;
+  background-color: black;
+}
+
+.button2 {
+  position: relative;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid black;
+  border-radius: 25px;
+  box-sizing: border-box;
+  font-family: monospace;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  transition: all 0.2s;
+  float: right;
+  margin-top: 10px;
+}
+.button2:hover {
+  color: white;
+  background-color: black;
+}
+
+.Card-Back-Left{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid black;
+    align-items: inherit;
+
+}
+.logo-Card{
+    align-items: flex-end;
+}
+
+.Card-Back-Right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-top: 20px;
+    margin-left: 0;
+}
+
+.Content-Back-Right{
+    text-align: start;
+    margin-left: 10px;
+    margin-right:1px;
+}
+
+@media screen and (max-width: 500px) {
+    .Card-Container{
+      max-width: 50vw;
+    }
+    .Content-Back-Right{
+      font-size: 1vh;
+    }
+    .Card-Back-Left{
+      font-size: 1.2vh;
+    }
+} 
